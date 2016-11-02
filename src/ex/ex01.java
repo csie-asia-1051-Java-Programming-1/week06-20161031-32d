@@ -8,14 +8,20 @@
  * Author: 1050210XX 周永振老師
  */
 import java.util.Scanner;
+
 public class ex01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		int n = scn.nextInt();
-		char c = scn.next().charAt(0);
-		
+		fun1(scn.nextInt(), scn.next().charAt(0));
+		}
+	public static void fun1(int n,char c ){
+		for(int i = 0; i<n;i++){
+			for(int j=0;j<n;j++ ){
+				System.out.print(c);
+			}
+			System.out.println();
+		}
 	}
-
 }
